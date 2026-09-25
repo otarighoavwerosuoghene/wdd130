@@ -1,0 +1,102 @@
+/* Rafting page styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	color: #17324d;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+header,
+footer {
+	padding: 1rem 5%;
+	background: #0b3954;
+	color: #fff;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+a {
+	color: inherit;
+}
+
+nav {
+	display: flex;
+	gap: 1.25rem;
+}
+
+.hero {
+	min-height: 55vh;
+	display: grid;
+	place-items: center;
+	padding: 4rem 5%;
+	color: #fff;
+	text-align: center;
+	background: linear-gradient(#0008, #0008), url("https://images.unsplash.com/photo-1521337581100-8ca9a73a5f79?auto=format&fit=crop&w=1600&q=85") center/cover;
+}
+
+.hero-content {
+	max-width: 45rem;
+}
+
+.button {
+	display: inline-block;
+	padding: .75rem 1.25rem;
+	border-radius: .25rem;
+	background: #f4a261;
+	color: #17324d;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+section {
+	padding: 4rem 5%;
+}
+
+.history-grid,
+.cards {
+	display: grid;
+	gap: 2rem;
+}
+
+.history-grid {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.history-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.cards {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+	padding: 1.5rem;
+	border-radius: .5rem;
+	background: #fff;
+	box-shadow: 0 2px 10px #0002;
+}
+
+.adventure {
+	background: #d9f0f2;
+}
+
+@media (max-width: 700px) {
+	header,
+	.history-grid,
+	.cards {
+		grid-template-columns: 1fr;
+		flex-direction: column;
+	}
+}
