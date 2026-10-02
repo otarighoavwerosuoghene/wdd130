@@ -1,60 +1,50 @@
-main {
-    max-width: 840px;
+:root {
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helevetica, sans-serif;
 }
 
-aside {
-    width: 20rem;
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color)
+}
+
+* {
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--accent1-color);
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 4px;
-    box-shadow: 0 0 16px;
-}
-
-p {
-    padding: 0;
-}
-
+header,
+main,
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+    width: 840px;
+    margin: 16px;
 }
 
-nav {
-    background-color: #fff;
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: #055a05;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
     padding: 16px;
+
 }
 
-nav a {
-    color: #000;
-    padding: 16px;
-    display: block;
-}
-
-h1 {
-    color: #000;
-}
-
-/* Class selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, .1);
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
+.socialmedia a {
+    text-decoration: dashed;
 }
