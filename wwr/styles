@@ -21,6 +21,7 @@ header {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--accent1-color);
+    width: 200px;
 }
 
 header,
