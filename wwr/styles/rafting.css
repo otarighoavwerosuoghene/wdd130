@@ -115,3 +115,22 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.homehero article {
+    top: 65px;
+    padding: 10px 0;
+}
+
+.hero article {
+    position: absolute;
+    top: 285px;
+    right: 80px;
+    width: 80%;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+article {
+    display: block;
+    unicode-bidi: isolate;
+}
