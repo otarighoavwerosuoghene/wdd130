@@ -27,7 +27,6 @@
         </nav>
     </header>
     <main>
-        <h1>Contact Us</h1>
 
         <p>Phone Number: 09012443595</p>
         <p>Email: info@rapid20whitewater.com</p>
@@ -37,37 +36,68 @@
             you
             as soon
             as possible.</p>
+        <main>
+            <section>
+                <h1>Contact Us</h1>
 
-        <form action="submit_form.php" method="post">
-            <fieldset>
-                <legend>Your Information</legend>
+                <form action="submit_form.php" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-            </fieldset>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
 
-            <fieldset>
-                <legend>Your Message</legend>
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <!-- Exactly 3 radio buttons, same name -->
+                        <label>
+                            <input type="radio" id="contact-email" name="contactmethod"
+                              value="email" required>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" id="contact-phone" name="contactmethod"
+                              value="phone">
+                            Phone
+                        </label>
+                        <label>
+                            <input type="radio" id="contact-text" name="contactmethod" value="text">
+                            Text Message
+                        </label>
+                    </fieldset>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                    <fieldset>
+                        <legend>Your Message</legend>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-            </fieldset>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
 
-            <button type="submit">Send Message</button>
-        </form>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+                        <!-- Checkbox -->
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Subscribe me to the newsletter
+                        </label>
+                    </fieldset>
+
+                    <!-- Meaningful submit button -->
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
 
 
         <section>
-            <h2>Our Location</h2>
+            <h1>Our Location</h1>
             <p>123 River Road, Benin City, Edo State, Nigeria</p>
             <iframe src="images/benin.webp" width="600" height="450" style="border:0;"
               allowfullscreen="" loading="lazy">
