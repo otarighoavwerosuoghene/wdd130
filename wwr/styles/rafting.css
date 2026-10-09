@@ -134,3 +134,41 @@ article {
     display: block;
     unicode-bidi: isolate;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    border-top: 3px solid var(--tertiary-color);
+    margin-top: 30px;
+}
+
+thread {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    break-inside: if(media(overflow-block: paged): avoid; );
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+pic figcaption,
+.history-grid figcaption {
+    text-align: center;
+    font-weight: 600;
+}
+
+history-grid img {
+    max-width: 100%;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: stretch;
+    border: 3px solid rgba(227, 147, 25, 0.3);
+}
