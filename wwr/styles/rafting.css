@@ -2,17 +2,24 @@
     --primary-color: #004080;
     --secondary-color: #ffcc00;
     --font-stack: "Helvetica", sans-serif;
-}
-
-body {
-    font-family: var(--font-stack);
-    background-color: lightblue color: var(--secondary-color);
+    --tertiary-color: #e39319;
+    /* define if needed */
+    --primary-text-color: #333;
+    /* define if needed */
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack, Arial, sans-serif);
+    background-color: #f0f8ff;
+    /* light blue */
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -56,6 +63,9 @@ header nav a {
     left: 20px;
     background: rgba(255, 255, 255, 0.8);
     padding: 1rem;
+    width: 80%;
+    text-align: center;
+    color: var(--primary-text-color);
 }
 
 .hero article img {
@@ -77,6 +87,11 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    border-top: 3px solid var(--tertiary-color);
+    margin-top: 30px;
 }
 
 .socialmedia a {
@@ -108,26 +123,9 @@ h1 {
     text-align: left;
 }
 
-body {
-    background-color: #f0f8ff;
-    /* light blue */
-    font-family: var(--font-stack, Arial, sans-serif);
-    margin: 0;
-    padding: 0;
-}
-
 .homehero article {
     top: 65px;
     padding: 10px 0;
-}
-
-.hero article {
-    position: absolute;
-    top: 285px;
-    right: 80px;
-    width: 80%;
-    text-align: center;
-    color: var(--primary-text-color);
 }
 
 article {
@@ -135,36 +133,23 @@ article {
     unicode-bidi: isolate;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
-    border-top: 3px solid var(--tertiary-color);
-    margin-top: 30px;
-}
-
-thread {
+thead {
     display: table-header-group;
     vertical-align: middle;
-    unicode-bidi: isolate;
-    break-inside: if(media(overflow-block: paged): avoid; );
-    border-color: inherit;
 }
 
 tbody {
     display: table-row-group;
     vertical-align: middle;
-    unicode-bidi: isolate;
-    border-color: inherit;
 }
 
-pic figcaption,
+.pic figcaption,
 .history-grid figcaption {
     text-align: center;
     font-weight: 600;
 }
 
-history-grid img {
+.history-grid img {
     max-width: 100%;
     height: auto;
     grid-column: 2;
