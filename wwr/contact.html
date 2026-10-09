@@ -27,82 +27,75 @@
         </nav>
     </header>
     <main>
-
-        <p>Phone Number: 09012443595</p>
-        <p>Email: info@rapid20whitewater.com</p>
-        <img src="images/real-map.png" alt="Map showing rafting company location" width="200"
-          height="100">
         <p>We’d love to hear from you! Please fill out the form below and we’ll get back to
             you
             as soon
             as possible.</p>
-        <main>
-            <section>
-                <h1>Contact Us</h1>
+        <div class="contact-top">
+            <h1>Rapids White Water Rafting</h1>
+            <div>
+                <p>Phone Number: +234 9012443595</p>
+                <p>Email: info@rapid20whitewater.com</p>
+            </div>
+        </div>
+        <section class="contact-grid">
+            <h2>Contact Us</h2>
+            <div class="map">
+                <img src="images/real-map.png" alt="Map showing rafting company location"
+                  width="450" height="200">
+            </div>
+            <form>
+                <div class="form-item column2"><label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required="">
+                </div>
+                <div class="form-item column2">
+                    <label for="email">Email:</label>
+                    <input type="email" name="useremail" id="email" placeholder="johndoe@gmail.com"
+                      required="">
+                </div>
 
-                <form action="submit_form.php" method="post">
-                    <fieldset>
-                        <legend>Your Information</legend>
-
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone">
+                <div>
+                    <fieldset class="form-item column2">
+                        <p class="label-legend">
+                            Message Purpose
+                        </p>
+                        <div>
+                            <input type="radio" id="general" name="purpose">
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div><input type="radio" id="reservation" name="purpose">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div><input type="radio" id="suggestion" name="purpose">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
                     </fieldset>
+                </div>
 
-                    <fieldset>
-                        <legend>Preferred Contact Method</legend>
-                        <!-- Exactly 3 radio buttons, same name -->
-                        <label>
-                            <input type="radio" id="contact-email" name="contactmethod"
-                              value="email" required>
-                            Email
-                        </label>
-                        <label>
-                            <input type="radio" id="contact-phone" name="contactmethod"
-                              value="phone">
-                            Phone
-                        </label>
-                        <label>
-                            <input type="radio" id="contact-text" name="contactmethod" value="text">
-                            Text Message
-                        </label>
-                    </fieldset>
+                <div class="form-item"><label for="feedback">Message</label>
+                    <textarea name="feedback" id="feedback" placeholder="Type here"
+                      rows="5"></textarea>
+                </div>
+                <div class="form-item" id="sub-check"><label for="subscription">Please
+                        Subscribe
+                        me to the monthly newsletter</label>
+                    <input type="checkbox" id="subscription" name="subscription">
+                </div>
 
-                    <fieldset>
-                        <legend>Your Message</legend>
+                <button type="submit">Get in Touch!</button>
 
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject" required>
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-
-                        <!-- Checkbox -->
-                        <label>
-                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-                            Subscribe me to the newsletter
-                        </label>
-                    </fieldset>
-
-                    <!-- Meaningful submit button -->
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-        </main>
-
-
-        <section>
-            <h1>Our Location</h1>
-            <p>123 River Road, Benin City, Edo State, Nigeria</p>
-            <iframe src="images/benin.webp" width="600" height="450" style="border:0;"
-              allowfullscreen="" loading="lazy">
-            </iframe>
+            </form>
         </section>
+    </main>
+
+
+    <section>
+        <h1>Our Location</h1>
+        <p>123 River Road, Benin City, Edo State, Nigeria</p>
+        <img src="images/benin.webp" width="600" height="250" style="border:0;" allowfullscreen=""
+          loading="lazy">
+        </img>
+    </section>
     </main>
     <footer>
         <p>&copy; 2026 White Water Rafting | Designed by Otarigho</p>
