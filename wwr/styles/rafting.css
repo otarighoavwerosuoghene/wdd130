@@ -1,18 +1,18 @@
-root {
-    --primary-color: #004466;
+:root {
+    --primary-color: #004080;
     --secondary-color: #ffcc00;
-    --font-family: Arial, sans-serif;
+    --font-stack: "Helvetica", sans-serif;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: lightblue color: var(--secondary-color);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-family);
-    line-height: 1.6;
 }
 
 header {
@@ -84,6 +84,28 @@ footer {
     margin: 0 5px;
 }
 
-body {
-    background-color: lightblue;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #000;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
 }
